@@ -9,7 +9,7 @@ en = {"Address": "Please, enter address ", "Adr_number": "Please, select address
       "IncorrectValue": "You must enter the number corresponding to the selected address.",
       "quting": "Goodbye, tnx for work."}
 
-ru = {"Address": "Пожалуйста, введите адрес ", "Adr_number": "Пожалуйста, выберите нужный адрес введя нужное число: ", 
+ru = {"Address": "Пожалуйста, введите адрес ", "Adr_number": "Пожалуйста, выберите нужный адрес, введя нужное число: ", 
       "Lat": "Ширина:", "Lon": "долгота:", "exit": 'или "Q" для выхода: ', 
       "NotFound": "Упс, ничего не найдено. Проверьте корректность ввода и попробуйте снова.", 
       "IncorrectValue": "Необходимо ввести число, соответствующее выбранному адресу.",
