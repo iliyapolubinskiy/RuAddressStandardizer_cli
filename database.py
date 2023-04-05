@@ -9,5 +9,5 @@ try:
                 lang TEXT
             );
         """)
-except sl.OperationalError:
-    pass
+except sl.OperationalError as e:
+    print("Something went wrong.", e)

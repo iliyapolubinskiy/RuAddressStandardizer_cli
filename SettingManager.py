@@ -24,7 +24,6 @@ def get_language():
 def set_settings(base, token: str, lang: str):
     sql = 'INSERT INTO SETTINGS (token, lang) values(?, ?)'
     data = [(token, lang)]
-    print(data)
     with base:
         base.execute("DELETE FROM SETTINGS")
         base.executemany(sql, data)
@@ -60,8 +59,7 @@ def get_settings():
     return (token, lang)
 
         
-def configure_settings(key):
+def configure_settings():
     api_key = get_api_key()
     language = get_language()
-    print(api_key, language)
     set_settings(base, api_key, language)
