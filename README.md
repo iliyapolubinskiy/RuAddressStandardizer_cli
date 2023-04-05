@@ -1,4 +1,4 @@
-# Russian Address Validator.
+# Russian Address Standardizer.
 
 Программа, функционал которой предоставляет пользователю доступ к API сервиса dadata.ru, в частности - к функционалу подсказок адресов.
 
