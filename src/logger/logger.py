@@ -7,7 +7,6 @@ class Logger:
 
     def __init__(self, log_level: int, log_path: str) -> None:
         """
-
         :param log_level: one of DEBUG, INFO, WARNING, ERROR, CRITICAL, FATAL
         :param log_path: path to .log file
         """

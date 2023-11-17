@@ -1,5 +1,5 @@
 from dadata.sync import DadataClient
-from logger.logger import log
+from src.logger.logger import log
 
 
 class Standardizer:
@@ -10,7 +10,12 @@ class Standardizer:
         self._lang = language
         self._client = DadataClient(token)
 
-    def get_addresses(self, query: str):
+    def get_addresses(self, query: str) -> list[dict]:
+        """
+        Запрос к DaData.
+        :param query: Строка с пользовательским запросом.
+        :return: Ответ в виде списка со словарями от сервиса DaData
+        """
         addresses = self._client.suggest(
             name="address",
             query=query,
